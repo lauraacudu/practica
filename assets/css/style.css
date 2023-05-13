@@ -1,0 +1,744 @@
+/* Estilos globales */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100vw;
+  background-color: #c6ac86;
+}
+
+
+
+
+/*header*/
+
+.header__container{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+background-color: rgb(134, 89, 33);
+box-shadow: 0px 4px 5px rgb(90, 57, 13);
+text-align: center;
+z-index: 2;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__container ul{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  line-height: 50px;
+  list-style: none;
+}
+
+.header__container ul li a{
+  text-decoration: none ;
+  color: rgb(96, 55, 15);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.s;
+}
+
+.header__container ul li a:hover{
+  color: rgb(63, 50, 35);
+  font-size: 22px;
+}
+
+.header_container ul li .container_logo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 32px;
+}
+
+
+
+
+/*banner*/
+.banner{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+  background-image: url(../img/1.jpg);
+  background-color: rgb(168, 85, 25);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.banner__text{
+  z-index: 1;
+}
+
+.banner::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner__text h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: wheat;
+  font-size: 55px;
+}
+
+.banner__text p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: wheat;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 50px;    
+}
+
+.banner__text a{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(168, 85, 25);
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: wheat;
+  padding: 20px 35px;
+  display: inline-block;
+  margin-top: 50px;   
+  border-radius: 24px;
+  border: 2px solid wheat;
+  transition: all 0.4s; 
+}
+
+.banner__text a:hover{
+  background-color: wheat;
+}
+
+
+
+
+/*about*/
+
+.about{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-header{
+  margin-bottom: 40px;
+}
+
+.section-header h2{
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-header p{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.single-about img{
+  width: 50%;
+  object-fit: cover;
+}
+.single-about h2{
+  font-size: 40px;
+  padding-top: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.single-about p{
+  width: 50%;
+  margin: auto;
+  padding: 40px 0;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.service{
+  padding: 40px;
+}
+
+.section-header h2{
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.section-header p{
+  width: 50%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.service-content{
+  display: flex;
+}
+
+.service-content img{
+  width: 100%;
+  padding: 10%;
+  height: 200px;
+}
+.service-content h2{
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.service-content p{
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  padding: 10%;
+  
+}
+
+
+/*contact*/
+.contact{
+  padding: 40px ;
+}
+
+.single-contact{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-contact input{
+  width: 88%;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  border-bottom: 3px solid rgb(168, 85, 25);
+}
+
+.single-contact textarea{
+  width: 88%;
+  height: 120px;
+  border: none;
+  border-bottom: 3px solid rgb(168, 85, 25);
+}
+
+.single-contact input:last-child{
+  border: none;
+  width: 30%;
+  border-radius: 10px;
+  background-color: rgb(168, 85, 25);
+  color: #f7f4f4;
+}
+
+.single-contact input:last-child:hover{
+  background-color: wheat;
+}
+
+
+
+/*footer*/
+footer{
+  background-color: rgb(168, 85, 25);
+  color: wheat;
+  line-height: 2;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+ /*tablet landscape*/
+@media (min-width:1024px) {
+
+
+  .about{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-header h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .section-header p{
+    width: 90%;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .single-about img{
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .single-about h2{
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .single-about p{
+    width: 90%;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+
+  .service{
+    padding: 40px 0;
+  }
+  
+  .section-header h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+
+  .section-header p{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .service-content{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .service-content img{
+    width: 80%;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .service-content h2{
+    text-transform: uppercase;
+    margin: 40px;
+    text-align: center;
+  }
+  
+  .service-content p{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px 30px;
+    
+  }
+
+
+  .single-contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .single-contact input{
+    width: 88%;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .single-contact textarea{
+    width: 88%;
+    height: 120px;
+    border: none;
+  }
+  
+  .single-contact input:last-child{
+ 
+    width: 30%;
+    border-radius: 10px;
+   
+  }
+  
+}
+
+
+/*tablet-portrait:*/
+@media (min-width:768px) and (max-width:1023px) {
+
+  .service-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+  }  
+  
+  .about{
+      padding: 80px 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section-header h2{
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .section-header p{
+      width: auto;
+      font-size: 30px;
+      text-align: justify;
+    }
+  
+    .single-about img{
+      width: 50%;
+      object-fit: cover;
+    }
+  
+    .single-about h2{
+      font-size: 40px;
+      padding-top: 40px;
+      text-align: center;
+    }
+  
+    .single-about p{
+      width: 90%;
+      font-size: 18px;
+      text-align: justify;
+    }
+  
+    .service{
+      padding: 40px 0;
+    }
+    
+    .section-header h2{
+      font-size: 40px;
+      padding-top: 40px;
+    }
+  
+    .section-header p{
+      width: 80%;
+      margin: auto;
+      padding: 40px 0;
+    }
+  
+    .service-content{
+      width: 90%;
+      margin: auto;
+      padding: 20px 0;
+    }
+  
+    .service-content img{
+      width: 80%;
+      padding: 40px 0;
+      height: auto;
+    }
+  
+    .service-content h2{
+      text-transform: uppercase;
+      margin: 40px;
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    }
+    
+    .service-content p{
+      line-height: 1.5;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: justify;
+      padding: 10px 30px;
+      
+    }
+  
+  
+    .single-contact{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .single-contact input{
+      width: 88%;
+      height: 50px;
+      margin: 10px;
+    }
+    
+    .single-contact textarea{
+      width: 88%;
+      height: 120px;
+    }
+    
+    .single-contact input:last-child{
+
+      width: 30%;
+      border-radius: 10px;
+     
+    }
+    
+  }
+  
+
+/*small-tablet-landscape:*/
+@media  (min-width: 800px) and (max-width: 767px) {
+  .about{
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-header h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .section-header p{
+    width: 80%;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .single-about img{
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .single-about h2{
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .single-about p{
+    width: 90%;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .service{
+    padding: 40px 0;
+  }
+  
+  .section-header h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+
+  .section-header p{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .service-content{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .service-content img{
+    width: 80%;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .service-content h2{
+    text-transform: uppercase;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  }
+  
+  .service-content p{
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 10px 30px;
+    
+  }
+
+
+  .single-contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .single-contact input{
+    width: 88%;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .single-contact textarea{
+    width: 88%;
+    height: 120px;
+  }
+  
+  .single-contact input:last-child{
+
+    width: 30%;
+    border-radius: 10px;
+   
+  }
+  
+}
+
+
+/*small-tablet-portrait:*/
+
+@media  (min-width: 600px) and (max-width: 799px) {
+  
+  
+  .service-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+
+  .section-header h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .section-header p{
+    width: 80%;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+  .single-about img{
+    width: 80%;
+    object-fit: cover;
+  }
+  .service-content img {
+    width: 100%;
+    padding: 10%;
+    height: 500px;
+
+  } 
+
+  .section-header p {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  .single-about img {
+    width: 80%;
+    object-fit: cover;
+
+  }
+
+
+  .single-about h2{
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .single-about p{
+    width: 88%;
+    font-size: 18px;
+    text-align: justify;
+    margin: auto;
+  }
+
+  .service{
+    padding: 40px 0;
+    
+  }
+  
+  .section-header h2{
+    font-size: 40px;
+    padding-top: 40px;
+  }
+
+  .section-header p{
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .service-content{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  .service-content img{
+    width: 100%;
+    padding: 10%;
+    height: 500px;
+
+  }
+
+  .service-content h2{
+    text-transform: uppercase;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  }
+  
+  .service-content p{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px 30px;
+    
+  }
+
+
+  .single-contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .single-contact input{
+    width: 88%;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .single-contact textarea{
+    width: 88%;
+    height: 120px;
+  }
+  
+  .single-contact input:last-child{
+
+    width: 30%;
+    border-radius: 10px;
+   
+  }
+  
+}
